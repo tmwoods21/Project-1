@@ -7,13 +7,13 @@ Planning:
   
 User stories:
 -Needs:
-  3 rows, 3 columns
-  3 different characters
-  mechanic for random choices
-  mechanic for choosing which 3 will be played
-  button for start/restart
-  button to stop/slow down
-  how to get characters in 1 row and not continuously spin(set up of only row 2 for winner)
+  -3 rows, 3 columns
+  -3 different characters
+  -mechanic for random choices
+  -mechanic for choosing which 3 will be played
+  -button for start/restart
+  -button to stop/slow down
+  -how to get characters in 1 row and not continuously spin(set up of only row 2 for winner)
   
   
 Pseudocode:
