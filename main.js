@@ -1,9 +1,21 @@
 console.log('js:loaded')
 
+
+
+
 let hunger = 0
 let sleepiness = 0
 let boredom = 0
 let aging = 0
+
+let hungervalue = document.getElementById("hungervalue")
+let sleepinessvalue = document.getElementById("sleepinessvalue")
+let boredomvalue = document.getElementById("boredomvalue")
+let agingvalue = document.getElementById("agingvalue")
+
+
+
+let messageUpdate = document.getElementById("message")
 
 const feedbtn = document.getElementById("feedbtn")
 //console.log(feedbtn)
@@ -65,11 +77,12 @@ function game() {
     boredomvalue.innerText = boredom
     
     console.log("hungerlevel" , hunger , "slepinesslevel" , sleepiness , "boredomlevel", boredom)
-    if (hunger == 10) {
-        alert("game over")
-        clearInterval(gameTimer)
-    }else if (aging == 10) {
-        alert("you win")
+    if (hunger == 3) {
+        //alert("game over")
+        message("game over")
+        clearInterval(petAge , gameTimer)
+    }else if (aging == 2) {
+        message("you win")
         clearInterval(petAge , gameTimer)
     }
 }
@@ -82,10 +95,11 @@ function age() {
     //console.log("aginglevel" , aging)
 }
 
-let hungervalue = document.getElementById("hungervalue")
-let sleepinessvalue = document.getElementById("sleepinessvalue")
-let boredomvalue = document.getElementById("boredomvalue")
-let agingvalue = document.getElementById("agingvalue")
+
+
+function message(msg) {
+    messageUpdate.innerText = msg
+}
 
 
 
