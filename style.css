@@ -6,6 +6,8 @@ body {
 h1 {
     font-size: x-large;
     text-align: center;
+    background-color: rgba(226, 168, 226, 0.514);
+
 }
 
 .buttons {
@@ -20,6 +22,14 @@ img {
 
 .background-image {
     background-image: url('https://i.pinimg.com/564x/8f/99/29/8f99297215f8da31fd0812560920d909.jpg');
+}
+
+#needs {
+    background-color: rgba(226, 168, 226, 0.514);
+}
+
+.message {
+    font-size:xx-large;
 }
 
 

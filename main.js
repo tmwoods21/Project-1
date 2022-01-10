@@ -18,15 +18,13 @@ let agingvalue = document.getElementById("agingvalue")
 let messageUpdate = document.getElementById("message")
 
 const feedbtn = document.getElementById("feedbtn")
-//console.log(feedbtn)
+
 feedbtn.addEventListener("click", feed)
 
 function feed() {
     console.log("feedthepet")
     let petHunger = hunger
-    
     hunger = hunger-1
-    //console.log(hunger)
     hungervalue.innerText = hunger
 }
 
@@ -39,7 +37,6 @@ function sleep() {
     console.log("putpettobed")
     let petSleepiness = sleepiness
     sleepiness = sleepiness-1
-    //console.log(sleepiness)
 }
 
 const playbtn = document.getElementById("playbtn")
@@ -50,16 +47,9 @@ function play() {
     console.log("playwiththepet")
     let petBoredom = boredom
     boredom = boredom-1
-    console.log(boredom)
 }
 
-const lightsbtn = document.getElementById("lightsbtn")
-const buttons = document.getElementById("buttons")
-lightsbtn.addEventListener("click", onoff)
 
-function onoff() {
-    console.log("turnlightsonoff")
-}
 
 const hungerNeeds = document.querySelector("#hunger-needs")
 
@@ -80,7 +70,7 @@ function game() {
     
     console.log("hungerlevel" , hunger , "slepinesslevel" , sleepiness , "boredomlevel", boredom)
     if (hunger == 10) {
-        message("GAME OVER")
+        message("GAME OVER!")
         clearInterval(gameTimer)
         clearInterval(petAge)
     }else if (aging == 10) {
@@ -95,7 +85,6 @@ let petAge = setInterval( age , 3000)
 function age() {
     aging = aging+1
     agingvalue.innerText = aging
-    //console.log("aginglevel" , aging)
 }
 
 
