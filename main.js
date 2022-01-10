@@ -54,7 +54,9 @@ function play() {
 }
 
 const lightsbtn = document.getElementById("lightsbtn")
+const buttons = document.getElementById("buttons")
 lightsbtn.addEventListener("click", onoff)
+
 function onoff() {
     console.log("turnlightsonoff")
 }
@@ -77,13 +79,14 @@ function game() {
     boredomvalue.innerText = boredom
     
     console.log("hungerlevel" , hunger , "slepinesslevel" , sleepiness , "boredomlevel", boredom)
-    if (hunger == 3) {
-        //alert("game over")
-        message("game over")
-        clearInterval(petAge , gameTimer)
-    }else if (aging == 2) {
-        message("you win")
-        clearInterval(petAge , gameTimer)
+    if (hunger == 10) {
+        message("GAME OVER")
+        clearInterval(gameTimer)
+        clearInterval(petAge)
+    }else if (aging == 10) {
+        message("YOU WIN!")
+        clearInterval(petAge)
+        clearInterval(gameTimer)
     }
 }
 
@@ -100,6 +103,8 @@ function age() {
 function message(msg) {
     messageUpdate.innerText = msg
 }
+
+
 
 
 

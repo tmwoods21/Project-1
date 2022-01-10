@@ -1,10 +1,29 @@
-h1 {
-    font-size: larger;
-}
-
 body {
-    background-color: cornflowerblue;
+    font-family:sans-serif;
+    background-image: url("https://i.pinimg.com/564x/8f/99/29/8f99297215f8da31fd0812560920d909.jpg");
 }
 
+h1 {
+    font-size: x-large;
+    text-align: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
+img {
+    height: 250px;
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.background-image {
+    background-image: url('https://i.pinimg.com/564x/8f/99/29/8f99297215f8da31fd0812560920d909.jpg');
+}
+
+.allneeds {
+    text-shadow: 5px 5px 15px white;
+}
 
 
